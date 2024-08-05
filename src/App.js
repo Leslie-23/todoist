@@ -4,7 +4,7 @@ import { Header } from './components/layout/Header';
 import { Content } from './components/layout/Content';
 import { ProjectsProvider, SelectedProjectProvider } from './context';
 
-export const App = ({ darkModeDefault = false }) => {
+const App = ({ darkModeDefault = false }) => {
   const [darkMode, setDarkMode] = useState(darkModeDefault);
 
   return (
@@ -25,3 +25,16 @@ export const App = ({ darkModeDefault = false }) => {
 App.propTypes = {
   darkModeDefault: PropTypes.bool,
 };
+export default App;
+
+// import React from 'react'
+
+// const App = () => {
+//   return (
+//     <div>
+
+//     </div>
+//   )
+// }
+
+// export default App
